@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">客户转介绍与复购运营体系</text>
+
+  <!-- Referral System -->
+  <text x="450" y="70" text-anchor="middle" class="subtitle">转介绍机制</text>
+
+  <g transform="translate(200, 140)">
+    <circle cx="0" cy="0" r="50" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">满意度</text>
+    <text x="0" y="15" text-anchor="middle" class="small">85%+</text>
+  </g>
+
+  <g transform="translate(450, 140)">
+    <circle cx="0" cy="0" r="50" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">触发时机</text>
+    <text x="0" y="15" text-anchor="middle" class="small">效果显现</text>
+  </g>
+
+  <g transform="translate(700, 140)">
+    <circle cx="0" cy="0" r="50" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">激励方案</text>
+    <text x="0" y="15" text-anchor="middle" class="small">双向奖励</text>
+  </g>
+
+  <line x1="250" y1="140" x2="400" y2="140" class="box"/>
+  <line x1="500" y1="140" x2="650" y2="140" class="box"/>
+
+  <!-- Referral Process -->
+  <rect x="100" y="250" width="700" height="180" class="box"/>
+
+  <rect x="120" y="270" width="150" height="140" class="box"/>
+  <text x="195" y="295" text-anchor="middle" class="subtitle">Step 1</text>
+  <text x="195" y="315" text-anchor="middle" class="small">满意度调查</text>
+  <text x="195" y="330" text-anchor="middle" class="small">• 服务评价</text>
+  <text x="195" y="345" text-anchor="middle" class="small">• 效果认可</text>
+  <text x="195" y="360" text-anchor="middle" class="small">• 情感连接</text>
+
+  <rect x="290" y="270" width="150" height="140" class="box"/>
+  <text x="365" y="295" text-anchor="middle" class="subtitle">Step 2</text>
+  <text x="365" y="315" text-anchor="middle" class="small">需求挖掘</text>
+  <text x="365" y="330" text-anchor="middle" class="small">• 潜在需求</text>
+  <text x="365" y="345" text-anchor="middle" class="small">• 朋友情况</text>
+  <text x="365" y="360" text-anchor="middle" class="small">• 转介绍意愿</text>
+
+  <rect x="460" y="270" width="150" height="140" class="box"/>
+  <text x="535" y="295" text-anchor="middle" class="subtitle">Step 3</text>
+  <text x="535" y="315" text-anchor="middle" class="small">方案设计</text>
+  <text x="535" y="330" text-anchor="middle" class="small">• 激励方案</text>
+  <text x="535" y="345" text-anchor="middle" class="small">• 流程安排</text>
+  <text x="535" y="360" text-anchor="middle" class="small">• 预期效果</text>
+
+  <rect x="630" y="270" width="150" height="140" class="box"/>
+  <text x="705" y="295" text-anchor="middle" class="subtitle">Step 4</text>
+  <text x="705" y="315" text-anchor="middle" class="small">执行跟进</text>
+  <text x="705" y="330" text-anchor="middle" class="small">• 正式邀请</text>
+  <text x="705" y="345" text-anchor="middle" class="small">• 过程服务</text>
+  <text x="705" y="360" text-anchor="middle" class="small">• 效果评估</text>
+
+  <!-- Repurchase Strategy -->
+  <text x="450" y="470" text-anchor="middle" class="subtitle">复购策略矩阵</text>
+
+  <rect x="50" y="490" width="180" height="80" class="box"/>
+  <text x="140" y="515" text-anchor="middle" class="small">新项目推荐</text>
+  <text x="140" y="535" text-anchor="middle" class="small">升级项目</text>
+
+  <rect x="250" y="490" width="180" height="80" class="box"/>
+  <text x="340" y="515" text-anchor="middle" class="small">周期性项目</text>
+  <text x="340" y="535" text-anchor="middle" class="small">维护项目</text>
+
+  <rect x="450" y="490" width="180" height="80" class="box"/>
+  <text x="540" y="515" text-anchor="middle" class="small">套餐优惠</text>
+  <text x="540" y="535" text-anchor="middle" class="small">会员权益</text>
+
+  <rect x="650" y="490" width="180" height="80" class="box"/>
+  <text x="740" y="515" text-anchor="middle" class="small">效果回访</text>
+  <text x="740" y="535" text-anchor="middle" class="small">需求调研</text>
+
+  <!-- Customer Lifecycle -->
+  <text x="450" y="610" text-anchor="middle" class="subtitle">客户生命周期管理</text>
+  <line x1="100" y1="590" x2="800" y2="590" class="box"/>
+
+  <circle cx="150" cy="590" r="5" class="box"/>
+  <text x="150" y="575" text-anchor="middle" class="small">获客</text>
+
+  <circle cx="300" cy="590" r="5" class="box"/>
+  <text x="300" y="575" text-anchor="middle" class="small">体验</text>
+
+  <circle cx="450" cy="590" r="5" class="box"/>
+  <text x="450" y="575" text-anchor="middle" class="small">购买</text>
+
+  <circle cx="600" cy="590" r="5" class="box"/>
+  <text x="600" y="575" text-anchor="middle" class="small">复购</text>
+
+  <circle cx="750" cy="590" r="5" class="box"/>
+  <text x="750" y="575" text-anchor="middle" class="small">推荐</text>
+</svg>

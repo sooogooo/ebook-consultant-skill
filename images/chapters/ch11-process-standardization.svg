@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">咨询流程标准化体系</text>
+
+  <!-- Standard Process -->
+  <text x="450" y="70" text-anchor="middle" class="subtitle">咨询流程六步法</text>
+
+  <g transform="translate(150, 140)">
+    <circle cx="0" cy="0" r="45" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">Step 1</text>
+    <text x="0" y="15" text-anchor="middle" class="small">接待客户</text>
+  </g>
+
+  <g transform="translate(300, 140)">
+    <circle cx="0" cy="0" r="45" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">Step 2</text>
+    <text x="0" y="15" text-anchor="middle" class="small">需求分析</text>
+  </g>
+
+  <g transform="translate(450, 140)">
+    <circle cx="0" cy="0" r="45" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">Step 3</text>
+    <text x="0" y="15" text-anchor="middle" class="small">方案设计</text>
+  </g>
+
+  <g transform="translate(600, 140)">
+    <circle cx="0" cy="0" r="45" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">Step 4</text>
+    <text x="0" y="15" text-anchor="middle" class="small">价值呈现</text>
+  </g>
+
+  <g transform="translate(750, 140)">
+    <circle cx="0" cy="0" r="45" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">Step 5</text>
+    <text x="0" y="15" text-anchor="middle" class="small">异议处理</text>
+  </g>
+
+  <g transform="translate(450, 240)">
+    <circle cx="0" cy="0" r="45" class="box"/>
+    <text x="0" y="-5" text-anchor="middle" class="small">Step 6</text>
+    <text x="0" y="15" text-anchor="middle" class="small">促成成交</text>
+  </g>
+
+  <line x1="195" y1="140" x2="255" y2="140" class="box"/>
+  <line x1="345" y1="140" x2="405" y2="140" class="box"/>
+  <line x1="495" y1="140" x2="555" y2="140" class="box"/>
+  <line x1="645" y1="140" x2="705" y2="140" class="box"/>
+
+  <!-- Time Allocation -->
+  <text x="450" y="320" text-anchor="middle" class="subtitle">时间分配标准</text>
+
+  <rect x="100" y="340" width="700" height="120" class="box"/>
+
+  <rect x="120" y="360" width="100" height="80" class="box"/>
+  <text x="170" y="385" text-anchor="middle" class="small">接待</text>
+  <text x="170" y="400" text-anchor="middle" class="small">10分钟</text>
+  <text x="170" y="420" text-anchor="middle" class="small">破冰建立信任</text>
+
+  <rect x="240" y="360" width="100" height="80" class="box"/>
+  <text x="290" y="385" text-anchor="middle" class="small">分析</text>
+  <text x="290" y="400" text-anchor="middle" class="small">20分钟</text>
+  <text x="290" y="420" text-anchor="middle" class="small">需求深度挖掘</text>
+
+  <rect x="360" y="360" width="100" height="80" class="box"/>
+  <text x="410" y="385" text-anchor="middle" class="small">设计</text>
+  <text x="410" y="400" text-anchor="middle" class="small">15分钟</text>
+  <text x="410" y="420" text-anchor="middle" class="small">方案初步设计</text>
+
+  <rect x="480" y="360" width="100" height="80" class="box"/>
+  <text x="530" y="385" text-anchor="middle" class="small">呈现</text>
+  <text x="530" y="400" text-anchor="middle" class="small">20分钟</text>
+  <text x="530" y="420" text-anchor="middle" class="small">价值充分呈现</text>
+
+  <rect x="600" y="360" width="100" height="80" class="box"/>
+  <text x="650" y="385" text-anchor="middle" class="small">处理</text>
+  <text x="650" y="400" text-anchor="middle" class="small">15分钟</text>
+  <text x="650" y="420" text-anchor="middle" class="small">异议处理</text>
+
+  <rect x="720" y="360" width="60" height="80" class="box"/>
+  <text x="750" y="385" text-anchor="middle" class="small">成交</text>
+  <text x="750" y="400" text-anchor="middle" class="small">10分钟</text>
+  <text x="750" y="420" text-anchor="middle" class="small">促成</text>
+
+  <!-- Template Types -->
+  <text x="450" y="510" text-anchor="middle" class="subtitle">标准化模板体系</text>
+
+  <rect x="100" y="530" width="150" height="60" class="box"/>
+  <text x="175" y="555" text-anchor="middle" class="small">开场话术模板</text>
+
+  <rect x="270" y="530" width="150" height="60" class="box"/>
+  <text x="345" y="555" text-anchor="middle" class="small">需求分析模板</text>
+
+  <rect x="440" y="530" width="150" height="60" class="box"/>
+  <text x="515" y="555" text-anchor="middle" class="small">方案呈现模板</text>
+
+  <rect x="610" y="530" width="150" height="60" class="box"/>
+  <text x="685" y="555" text-anchor="middle" class="small">异议处理模板</text>
+</svg>

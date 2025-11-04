@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">数据分析与业绩提升体系</text>
+
+  <!-- Core Metrics -->
+  <text x="450" y="70" text-anchor="middle" class="subtitle">核心指标体系</text>
+
+  <rect x="100" y="100" width="160" height="80" class="box"/>
+  <text x="180" y="125" text-anchor="middle" class="subtitle">业绩指标</text>
+  <text x="180" y="145" text-anchor="middle" class="small">• 成交量</text>
+  <text x="180" y="160" text-anchor="middle" class="small">• 客单价</text>
+
+  <rect x="280" y="100" width="160" height="80" class="box"/>
+  <text x="360" y="125" text-anchor="middle" class="subtitle">效率指标</text>
+  <text x="360" y="145" text-anchor="middle" class="small">• 咨询量</text>
+  <text x="360" y="160" text-anchor="middle" class="small">• 转化率</text>
+
+  <rect x="460" y="100" width="160" height="80" class="box"/>
+  <text x="540" y="125" text-anchor="middle" class="subtitle">质量指标</text>
+  <text x="540" y="145" text-anchor="middle" class="small">• 满意度</text>
+  <text x="540" y="160" text-anchor="middle" class="small">• 投诉率</text>
+
+  <rect x="640" y="100" width="160" height="80" class="box"/>
+  <text x="720" y="125" text-anchor="middle" class="subtitle">客户指标</text>
+  <text x="720" y="145" text-anchor="middle" class="small">• 新客量</text>
+  <text x="720" y="160" text-anchor="middle" class="small">• 复购率</text>
+
+  <!-- Data Collection -->
+  <text x="450" y="230" text-anchor="middle" class="subtitle">数据收集维度</text>
+
+  <rect x="50" y="250" width="220" height="150" class="box"/>
+  <text x="160" y="275" text-anchor="middle" class="subtitle">客户数据</text>
+  <text x="160" y="295" text-anchor="middle" class="small">• 基础信息</text>
+  <text x="160" y="310" text-anchor="middle" class="small">• 消费记录</text>
+  <text x="160" y="325" text-anchor="middle" class="small">• 偏好分析</text>
+  <text x="160" y="340" text-anchor="middle" class="small">• 反馈意见</text>
+  <text x="160" y="360" text-anchor="middle" class="small">• 社交媒体</text>
+
+  <rect x="290" y="250" width="220" height="150" class="box"/>
+  <text x="399" y="275" text-anchor="middle" class="subtitle">销售数据</text>
+  <text x="399" y="295" text-anchor="middle" class="small">• 咨询记录</text>
+  <text x="399" y="310" text-anchor="middle" class="small">• 成交情况</text>
+  <text x="399" y="325" text-anchor="middle" class="small">• 金额统计</text>
+  <text x="399" y="340" text-anchor="middle" class="small">• 项目分析</text>
+  <text x="399" y="360" text-anchor="middle" class="small">• 时间分布</text>
+
+  <rect x="528" y="250" width="220" height="150" class="box"/>
+  <text x="638" y="275" text-anchor="middle" class="subtitle">运营数据</text>
+  <text x="638" y="295" text-anchor="middle" class="small">• 渠道来源</text>
+  <text x="638" y="310" text-anchor="middle" class="small">• 活动效果</text>
+  <text x="638" y="325" text-anchor="middle" class="small">• 服务质量</text>
+  <text x="638" y="340" text-anchor="middle" class="small">• 竞品分析</text>
+  <text x="638" y="360" text-anchor="middle" class="small">• 趋势预测</text>
+
+  <!-- Analysis Process -->
+  <text x="450" y="450" text-anchor="middle" class="subtitle">数据分析流程</text>
+
+  <g transform="translate(150, 520)">
+    <rect x="-40" y="-20" width="80" height="40" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">收集</text>
+  </g>
+
+  <g transform="translate(300, 520)">
+    <rect x="-40" y="-20" width="80" height="40" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">清洗</text>
+  </g>
+
+  <g transform="translate(450, 520)">
+    <rect x="-40" y="-20" width="80" height="40" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">分析</text>
+  </g>
+
+  <g transform="translate(600, 520)">
+    <rect x="-40" y="-20" width="80" height="40" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">洞察</text>
+  </g>
+
+  <g transform="translate(750, 520)">
+    <rect x="-40" y="-20" width="80" height="40" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">行动</text>
+  </g>
+
+  <line x1="190" y1="520" x2="260" y2="520" class="box"/>
+  <line x1="340" y1="520" x2="410" y2="520" class="box"/>
+  <line x1="490" y1="520" x2="560" y2="520" class="box"/>
+  <line x1="640" y1="520" x2="710" y2="520" class="box"/>
+</svg>

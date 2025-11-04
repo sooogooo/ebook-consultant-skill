@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">专业形象塑造要素与沟通技巧</text>
+
+  <!-- Three Pillars -->
+  <rect x="100" y="80" width="200" height="180" class="box"/>
+  <text x="200" y="110" text-anchor="middle" class="subtitle">外在形象</text>
+  <text x="200" y="135" text-anchor="middle" class="small">• 职业着装</text>
+  <text x="200" y="150" text-anchor="middle" class="small">• 仪容仪表</text>
+  <text x="200" y="165" text-anchor="middle" class="small">• 肢体语言</text>
+  <text x="200" y="180" text-anchor="middle" class="small">• 整体气质</text>
+  <text x="200" y="195" text-anchor="middle" class="small">• 专业配饰</text>
+
+  <rect x="350" y="80" width="200" height="180" class="box"/>
+  <text x="450" y="110" text-anchor="middle" class="subtitle">内在修养</text>
+  <text x="450" y="135" text-anchor="middle" class="small">• 专业知识</text>
+  <text x="450" y="150" text-anchor="middle" class="small">• 文化素养</text>
+  <text x="450" y="165" text-anchor="middle" class="small">• 职业操守</text>
+  <text x="450" y="180" text-anchor="middle" class="small">• 服务意识</text>
+  <text x="450" y="195" text-anchor="middle" class="small">• 学习成长</text>
+
+  <rect x="600" y="80" width="200" height="180" class="box"/>
+  <text x="700" y="110" text-anchor="middle" class="subtitle">沟通技能</text>
+  <text x="700" y="135" text-anchor="middle" class="small">• 倾听能力</text>
+  <text x="700" y="150" text-anchor="middle" class="small">• 表达能力</text>
+  <text x="700" y="165" text-anchor="middle" class="small">• 共情能力</text>
+  <text x="700" y="180" text-anchor="middle" class="small">• 说服技巧</text>
+  <text x="700" y="195" text-anchor="middle" class="small">• 冲突化解</text>
+
+  <!-- Communication Process -->
+  <text x="450" y="310" text-anchor="middle" class="subtitle">有效沟通流程</text>
+
+  <g transform="translate(150, 340)">
+    <circle cx="0" cy="0" r="30" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">准备</text>
+  </g>
+
+  <g transform="translate(300, 340)">
+    <circle cx="0" cy="0" r="30" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">开场</text>
+  </g>
+
+  <g transform="translate(450, 340)">
+    <circle cx="0" cy="0" r="30" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">交流</text>
+  </g>
+
+  <g transform="translate(600, 340)">
+    <circle cx="0" cy="0" r="30" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">确认</text>
+  </g>
+
+  <g transform="translate(750, 340)">
+    <circle cx="0" cy="0" r="30" class="box"/>
+    <text x="0" y="5" text-anchor="middle" class="small">跟进</text>
+  </g>
+
+  <line x1="180" y1="340" x2="270" y2="340" class="box"/>
+  <line x1="330" y1="340" x2="420" y2="340" class="box"/>
+  <line x1="480" y1="340" x2="570" y2="340" class="box"/>
+  <line x1="630" y1="340" x2="720" y2="340" class="box"/>
+
+  <!-- Communication Model -->
+  <text x="450" y="430" text-anchor="middle" class="subtitle">沟通的5C原则</text>
+
+  <rect x="50" y="460" width="160" height="90" class="box"/>
+  <text x="130" y="485" text-anchor="middle" class="subtitle">Clear</text>
+  <text x="130" y="505" text-anchor="middle" class="small">清晰</text>
+  <text x="130" y="520" text-anchor="middle" class="small">表达准确</text>
+  <text x="130" y="535" text-anchor="middle" class="small">逻辑清晰</text>
+
+  <rect x="230" y="460" width="160" height="90" class="box"/>
+  <text x="310" y="485" text-anchor="middle" class="subtitle">Concise</text>
+  <text x="310" y="505" text-anchor="middle" class="small">简洁</text>
+  <text x="310" y="520" text-anchor="middle" class="small">重点突出</text>
+  <text x="310" y="535" text-anchor="middle" class="small">避免冗余</text>
+
+  <rect x="410" y="460" width="160" height="90" class="box"/>
+  <text x="490" y="485" text-anchor="middle" class="subtitle">Concrete</text>
+  <text x="490" y="505" text-anchor="middle" class="small">具体</text>
+  <text x="490" y="520" text-anchor="middle" class="small">有据可依</text>
+  <text x="490" y="535" text-anchor="middle" class="small">案例说明</text>
+
+  <rect x="590" y="460" width="160" height="90" class="box"/>
+  <text x="670" y="485" text-anchor="middle" class="subtitle">Correct</text>
+  <text x="670" y="505" text-anchor="middle" class="small">正确</text>
+  <text x="670" y="520" text-anchor="middle" class="small">信息准确</text>
+  <text x="670" y="535" text-anchor="middle" class="small">专业可靠</text>
+
+  <rect x="770" y="460" width="80" height="90" class="box"/>
+  <text x="810" y="485" text-anchor="middle" class="subtitle">Courteous</text>
+  <text x="810" y="505" text-anchor="middle" class="small">礼貌</text>
+  <text x="810" y="520" text-anchor="middle" class="small">尊重</text>
+  <text x="810" y="535" text-anchor="middle" class="small">专业</text>
+</svg>

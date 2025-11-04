@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+      .arrow { stroke: #666; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="title">咨询师角色定位与价值体系</text>
+
+  <!-- 核心角色 -->
+  <rect x="50" y="80" width="200" height="120" class="box" rx="5"/>
+  <text x="150" y="105" text-anchor="middle" class="subtitle">核心角色</text>
+  <text x="150" y="130" text-anchor="middle" class="text">• 专业顾问</text>
+  <text x="150" y="150" text-anchor="middle" class="text">• 美丽规划师</text>
+  <text x="150" y="170" text-anchor="middle" class="text">• 心理疏导者</text>
+  <text x="150" y="190" text-anchor="middle" class="text">• 服务协调员</text>
+
+  <!-- 价值创造 -->
+  <rect x="300" y="80" width="200" height="120" class="box" rx="5"/>
+  <text x="400" y="105" text-anchor="middle" class="subtitle">价值创造</text>
+  <text x="400" y="130" text-anchor="middle" class="text">• 专业建议</text>
+  <text x="400" y="150" text-anchor="middle" class="text">• 方案设计</text>
+  <text x="400" y="170" text-anchor="middle" class="text">• 情感支持</text>
+  <text x="400" y="190" text-anchor="middle" class="text">• 全程服务</text>
+
+  <!-- 职业素养 -->
+  <rect x="550" y="80" width="200" height="120" class="box" rx="5"/>
+  <text x="650" y="105" text-anchor="middle" class="subtitle">职业素养</text>
+  <text x="650" y="130" text-anchor="middle" class="text">• 专业形象</text>
+  <text x="650" y="150" text-anchor="middle" class="text">• 沟通能力</text>
+  <text x="650" y="170" text-anchor="middle" class="text">• 服务意识</text>
+  <text x="650" y="190" text-anchor="middle" class="text">• 职业道德</text>
+
+  <!-- 职业发展阶段 -->
+  <text x="400" y="250" text-anchor="middle" class="subtitle">职业发展阶段</text>
+
+  <rect x="50" y="280" width="160" height="100" class="box" rx="5"/>
+  <text x="130" y="305" text-anchor="middle" class="subtitle">新手期</text>
+  <text x="130" y="325" text-anchor="middle" class="text">0-2年</text>
+  <text x="130" y="345" text-anchor="middle" class="small">学习基础技能</text>
+  <text x="130" y="360" text-anchor="middle" class="small">积累经验</text>
+
+  <rect x="230" y="280" width="160" height="100" class="box" rx="5"/>
+  <text x="310" y="305" text-anchor="middle" class="subtitle">成长期</text>
+  <text x="310" y="325" text-anchor="middle" class="text">2-5年</text>
+  <text x="310" y="345" text-anchor="middle" class="small">独立工作</text>
+  <text x="310" y="360" text-anchor="middle" class="small">业绩提升</text>
+
+  <rect x="410" y="280" width="160" height="100" class="box" rx="5"/>
+  <text x="490" y="305" text-anchor="middle" class="subtitle">成熟期</text>
+  <text x="490" y="325" text-anchor="middle" class="text">5-8年</text>
+  <text x="490" y="345" text-anchor="middle" class="small">行业专家</text>
+  <text x="490" y="360" text-anchor="middle" class="small">影响力</text>
+
+  <rect x="590" y="280" width="160" height="100" class="box" rx="5"/>
+  <text x="670" y="305" text-anchor="middle" class="subtitle">专家期</text>
+  <text x="670" y="325" text-anchor="middle" class="text">8年+</text>
+  <text x="670" y="345" text-anchor="middle" class="small">行业领袖</text>
+  <text x="670" y="360" text-anchor="middle" class="small">价值创造</text>
+
+  <!-- 箭头连接 -->
+  <line x1="210" y1="330" x2="230" y2="330" class="arrow"/>
+  <line x1="390" y1="330" x2="410" y2="330" class="arrow"/>
+  <line x1="570" y1="330" x2="590" y2="330" class="arrow"/>
+
+  <!-- 核心能力雷达图 -->
+  <text x="400" y="430" text-anchor="middle" class="subtitle">核心能力要求</text>
+
+  <g transform="translate(200, 500)">
+    <circle cx="0" cy="0" r="80" class="box"/>
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#ccc" stroke-width="1"/>
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#ccc" stroke-width="1"/>
+    <line x1="-57" y1="-57" x2="57" y2="57" stroke="#ccc" stroke-width="1"/>
+    <line x1="-57" y1="57" x2="57" y2="-57" stroke="#ccc" stroke-width="1"/>
+
+    <text x="0" y="-90" text-anchor="middle" class="small">专业</text>
+    <text x="90" y="5" text-anchor="start" class="small">沟通</text>
+    <text x="0" y="105" text-anchor="middle" class="small">服务</text>
+    <text x="-90" y="5" text-anchor="end" class="small">销售</text>
+  </g>
+
+  <g transform="translate(600, 500)">
+    <circle cx="0" cy="0" r="80" class="box"/>
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#ccc" stroke-width="1"/>
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#ccc" stroke-width="1"/>
+    <line x1="-57" y1="-57" x2="57" y2="57" stroke="#ccc" stroke-width="1"/>
+    <line x1="-57" y1="57" x2="57" y2="-57" stroke="#ccc" stroke-width="1"/>
+
+    <text x="0" y="-90" text-anchor="middle" class="small">心理</text>
+    <text x="90" y="5" text-anchor="start" class="small">审美</text>
+    <text x="0" y="105" text-anchor="middle" class="small">学习</text>
+    <text x="-90" y="5" text-anchor="end" class="small">创新</text>
+  </g>
+</svg>

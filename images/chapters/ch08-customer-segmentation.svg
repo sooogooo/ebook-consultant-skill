@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">客户类型分析与差异化策略</text>
+
+  <!-- Eight Customer Types -->
+  <text x="450" y="70" text-anchor="middle" class="subtitle">八种客户类型</text>
+
+  <rect x="50" y="100" width="130" height="60" class="box"/>
+  <text x="115" y="125" text-anchor="middle" class="small">理性型</text>
+
+  <rect x="200" y="100" width="130" height="60" class="box"/>
+  <text x="265" y="125" text-anchor="middle" class="small">感性型</text>
+
+  <rect x="350" y="100" width="130" height="60" class="box"/>
+  <text x="415" y="125" text-anchor="middle" class="small">谨慎型</text>
+
+  <rect x="500" y="100" width="130" height="60" class="box"/>
+  <text x="565" y="125" text-anchor="middle" class="small">果断型</text>
+
+  <rect x="650" y="100" width="130" height="60" class="box"/>
+  <text x="715" y="125" text-anchor="middle" class="small">权威型</text>
+
+  <rect x="50" y="180" width="130" height="60" class="box"/>
+  <text x="115" y="205" text-anchor="middle" class="small">社交型</text>
+
+  <rect x="200" y="180" width="130" height="60" class="box"/>
+  <text x="265" y="205" text-anchor="middle" class="small">完美型</text>
+
+  <rect x="350" y="180" width="130" height="60" class="box"/>
+  <text x="415" y="205" text-anchor="middle" class="small">节俭型</text>
+
+  <!-- Age Segmentation -->
+  <text x="200" y="300" text-anchor="middle" class="subtitle">年龄分层策略</text>
+
+  <rect x="50" y="320" width="280" height="120" class="box"/>
+  <text x="190" y="345" text-anchor="middle" class="text">18-25岁</text>
+  <text x="190" y="365" text-anchor="middle" class="small">• 追求时尚潮流</text>
+  <text x="190" y="380" text-anchor="middle" class="small">• 价格敏感度高</text>
+  <text x="190" y="395" text-anchor="middle" class="small">• 社交媒体影响</text>
+  <text x="190" y="410" text-anchor="middle" class="small">• 分期付款接受</text>
+
+  <rect x="50" y="460" width="280" height="120" class="box"/>
+  <text x="190" y="485" text-anchor="middle" class="text">26-35岁</text>
+  <text x="190" y="505" text-anchor="middle" class="small">• 注重效果</text>
+  <text x="190" y="520" text-anchor="middle" class="small">• 追求品质</text>
+  <text x="190" y="535" text-anchor="middle" class="small">• 品牌意识强</text>
+  <text x="190" y="550" text-anchor="middle" class="small">• 复购率高</text>
+
+  <!-- Gender Segmentation -->
+  <text x="650" y="300" text-anchor="middle" class="subtitle">性别差异化策略</text>
+
+  <rect x="570" y="320" width="280" height="120" class="box"/>
+  <text x="710" y="345" text-anchor="middle" class="text">女性客户</text>
+  <text x="710" y="365" text-anchor="middle" class="small">• 注重美感体验</text>
+  <text x="710" y="380" text-anchor="middle" class="small">• 情感驱动明显</text>
+  <text x="710" y="395" text-anchor="middle" class="small">• 追求完美细节</text>
+  <text x="710" y="410" text-anchor="middle" class="small">• 口碑传播强</text>
+
+  <rect x="570" y="460" width="280" height="120" class="box"/>
+  <text x="710" y="485" text-anchor="middle" class="text">男性客户</text>
+  <text x="710" y="505" text-anchor="middle" class="small">• 注重效果</text>
+  <text x="710" y="520" text-anchor="middle" class="small">• 理性决策</text>
+  <text x="710" y="535" text-anchor="middle" class="small">• 简洁高效</text>
+  <text x="710" y="550" text-anchor="middle" class="small">• 隐私保护</text>
+
+  <!-- Customer Decision Journey -->
+  <text x="450" y="620" text-anchor="middle" class="subtitle">客户决策路径</text>
+  <line x1="100" y1="600" x2="800" y2="600" class="box"/>
+
+  <circle cx="100" cy="600" r="5" class="box"/>
+  <text x="100" y="585" text-anchor="middle" class="small">认知</text>
+
+  <circle cx="250" cy="600" r="5" class="box"/>
+  <text x="250" y="585" text-anchor="middle" class="small">兴趣</text>
+
+  <circle cx="400" cy="600" r="5" class="box"/>
+  <text x="400" y="585" text-anchor="middle" class="small">考虑</text>
+
+  <circle cx="550" cy="600" r="5" class="box"/>
+  <text x="550" y="585" text-anchor="middle" class="small">购买</text>
+
+  <circle cx="700" cy="600" r="5" class="box"/>
+  <text x="700" y="585" text-anchor="middle" class="small">推荐</text>
+</svg>

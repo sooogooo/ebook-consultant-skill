@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">常见问题FAQ与应对策略</text>
+
+  <!-- FAQ Categories -->
+  <text x="450" y="70" text-anchor="middle" class="subtitle">问题分类体系</text>
+
+  <rect x="50" y="100" width="160" height="90" class="box"/>
+  <text x="130" y="125" text-anchor="middle" class="subtitle">项目类问题</text>
+  <text x="130" y="145" text-anchor="middle" class="small">• 项目介绍</text>
+  <text x="130" y="160" text-anchor="middle" class="small">• 适用人群</text>
+  <text x="130" y="175" text-anchor="middle" class="small">• 效果说明</text>
+
+  <rect x="230" y="100" width="160" height="90" class="box"/>
+  <text x="310" y="125" text-anchor="middle" class="subtitle">安全类问题</text>
+  <text x="310" y="145" text-anchor="middle" class="small">• 副作用</text>
+  <text x="310" y="160" text-anchor="middle" class="small">• 并发症</text>
+  <text x="310" y="175" text-anchor="middle" class="small">• 风险控制</text>
+
+  <rect x="410" y="100" width="160" height="90" class="box"/>
+  <text x="490" y="125" text-anchor="middle" class="subtitle">价格类问题</text>
+  <text x="490" y="145" text-anchor="middle" class="small">• 费用构成</text>
+  <text x="490" y="160" text-anchor="middle" class="small">• 优惠活动</text>
+  <text x="490" y="175" text-anchor="middle" class="small">• 分期付款</text>
+
+  <rect x="590" y="100" width="160" height="90" class="box"/>
+  <text x="670" y="125" text-anchor="middle" class="subtitle">流程类问题</text>
+  <text x="670" y="145" text-anchor="middle" class="small">• 预约流程</text>
+  <text x="670" y="160" text-anchor="middle" class="small">• 治疗周期</text>
+  <text x="670" y="175" text-anchor="middle" class="small">• 术后护理</text>
+
+  <rect x="770" y="100" width="80" height="90" class="box"/>
+  <text x="810" y="125" text-anchor="middle" class="subtitle">其他</text>
+  <text x="810" y="145" text-anchor="middle" class="small">• 机构资质</text>
+  <text x="810" y="160" text-anchor="middle" class="small">• 专家背景</text>
+  <text x="810" y="175" text-anchor="middle" class="small">• 保障服务</text>
+
+  <!-- Response Framework -->
+  <text x="450" y="250" text-anchor="middle" class="subtitle">应答框架AIDA</text>
+
+  <rect x="100" y="270" width="700" height="180" class="box"/>
+
+  <rect x="120" y="290" width="120" height="140" class="box"/>
+  <text x="180" y="315" text-anchor="middle" class="subtitle">A - Attention</text>
+  <text x="180" y="335" text-anchor="middle" class="small">引起注意</text>
+  <text x="180" y="350" text-anchor="middle" class="small">• 积极回应</text>
+  <text x="180" y="365" text-anchor="middle" class="small">• 表示理解</text>
+  <text x="180" y="380" text-anchor="middle" class="small">• 建立信任</text>
+  <text x="180" y="400" text-anchor="middle" class="small">• 详细解答</text>
+
+  <rect x="260" y="290" width="120" height="140" class="box"/>
+  <text x="320" y="315" text-anchor="middle" class="subtitle">I - Interest</text>
+  <text x="320" y="335" text-anchor="middle" class="small">激发兴趣</text>
+  <text x="320" y="350" text-anchor="middle" class="small">• 专业分析</text>
+  <text x="320" y="365" text-anchor="middle" class="small">• 案例说明</text>
+  <text x="320" y="380" text-anchor="middle" class="small">• 价值展示</text>
+  <text x="320" y="400" text-anchor="middle" class="small">• 优势突出</text>
+
+  <rect x="400" y="290" width="120" height="140" class="box"/>
+  <text x="460" y="315" text-anchor="middle" class="subtitle">D - Desire</text>
+  <text x="460" y="335" text-anchor="middle" class="small">激发渴望</text>
+  <text x="460" y="350" text-anchor="middle" class="small">• 效果预测</text>
+  <text x="460" y="365" text-anchor="middle" class="small">• 利益描述</text>
+  <text x="460" y="380" text-anchor="middle" class="small">• 情感共鸣</text>
+  <text x="460" y="400" text-anchor="middle" class="small">• 愿景描绘</text>
+
+  <rect x="540" y="290" width="120" height="140" class="box"/>
+  <text x="600" y="315" text-anchor="middle" class="subtitle">A - Action</text>
+  <text x="600" y="335" text-anchor="middle" class="small">促成行动</text>
+  <text x="600" y="350" text-anchor="middle" class="small">• 消除顾虑</text>
+  <text x="600" y="365" text-anchor="middle" class="small">• 提供保障</text>
+  <text x="600" y="380" text-anchor="middle" class="small">• 引导决策</text>
+  <text x="600" y="400" text-anchor="middle" class="small">• 确认方案</text>
+
+  <rect x="680" y="290" width="100" height="140" class="box"/>
+  <text x="730" y="315" text-anchor="middle" class="subtitle">跟进</text>
+  <text x="730" y="335" text-anchor="middle" class="small">• 后续服务</text>
+  <text x="730" y="350" text-anchor="middle" class="small">• 定期回访</text>
+  <text x="730" y="365" text-anchor="middle" class="small">• 问题解答</text>
+  <text x="730" y="380" text-anchor="middle" class="small">• 满意度</text>
+
+  <!-- Top 5 FAQ -->
+  <text x="450" y="500" text-anchor="middle" class="subtitle">高频FAQ排行榜</text>
+
+  <rect x="100" y="520" width="150" height="60" class="box"/>
+  <text x="175" y="545" text-anchor="middle" class="small">1. 安全性如何？</text>
+
+  <rect x="270" y="520" width="150" height="60" class="box"/>
+  <text x="345" y="545" text-anchor="middle" class="small">2. 效果能保证吗？</text>
+
+  <rect x="440" y="520" width="150" height="60" class="box"/>
+  <text x="515" y="545" text-anchor="middle" class="small">3. 价格还能优惠吗？</text>
+
+  <rect x="610" y="520" width="150" height="60" class="box"/>
+  <text x="685" y="545" text-anchor="middle" class="small">4. 恢复期多久？</text>
+
+  <rect x="780" y="520" width="80" height="60" class="box"/>
+  <text x="820" y="545" text-anchor="middle" class="small">5. 有副作用吗？</text>
+</svg>

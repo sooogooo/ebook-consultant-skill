@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #666; }
+      .text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .small { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title">高客单价项目成交策略</text>
+
+  <!-- High-Value Project Categories -->
+  <text x="450" y="70" text-anchor="middle" class="subtitle">高价值项目类型</text>
+
+  <rect x="50" y="100" width="200" height="100" class="box"/>
+  <text x="150" y="125" text-anchor="middle" class="subtitle">手术类项目</text>
+  <text x="150" y="145" text-anchor="middle" class="small">• 眼部整形</text>
+  <text x="150" y="160" text-anchor="middle" class="small">• 鼻部整形</text>
+  <text x="150" y="175" text-anchor="middle" class="small">• 面部轮廓</text>
+
+  <rect x="270" y="100" width="200" height="100" class="box"/>
+  <text x="370" y="125" text-anchor="middle" class="subtitle">综合年轻化</text>
+  <text x="370" y="145" text-anchor="middle" class="small">• 全面部提升</text>
+  <text x="370" y="160" text-anchor="middle" class="small">• 综合抗衰</text>
+  <text x="370" y="175" text-anchor="middle" class="small">• 定制方案</text>
+
+  <rect x="490" y="100" width="200" height="100" class="box"/>
+  <text x="590" y="125" text-anchor="middle" class="subtitle">身体塑形</text>
+  <text x="590" y="145" text-anchor="middle" class="small">• 脂肪雕塑</text>
+  <text x="590" y="160" text-anchor="middle" class="small">• 乳房整形</text>
+  <text x="590" y="175" text-anchor="middle" class="small">• 私密整形</text>
+
+  <rect x="710" y="100" width="140" height="100" class="box"/>
+  <text x="780" y="125" text-anchor="middle" class="subtitle">高端定制</text>
+  <text x="780" y="145" text-anchor="middle" class="small">• VIP服务</text>
+  <text x="780" y="160" text-anchor="middle" class="small">• 专属方案</text>
+  <text x="780" y="175" text-anchor="middle" class="small">• 专家主刀</text>
+
+  <!-- High-Value Sales Model -->
+  <text x="450" y="250" text-anchor="middle" class="subtitle">高价值销售模型</text>
+
+  <rect x="50" y="270" width="300" height="200" class="box"/>
+  <text x="200" y="295" text-anchor="middle" class="subtitle">关系建立</text>
+  <text x="200" y="315" text-anchor="middle" class="small">• 充分沟通</text>
+  <text x="200" y="330" text-anchor="middle" class="small">• 建立信任</text>
+  <text x="200" y="345" text-anchor="middle" class="small">• 了解背景</text>
+  <text x="200" y="360" text-anchor="middle" class="small">• 评估决策权</text>
+  <text x="200" y="380" text-anchor="middle" class="subtitle">需求诊断</text>
+  <text x="200" y="400" text-anchor="middle" class="small">• 深层需求</text>
+  <text x="200" y="415" text-anchor="middle" class="small">• 预算范围</text>
+  <text x="200" y="430" text-anchor="middle" class="small">• 期望效果</text>
+  <text x="200" y="445" text-anchor="middle" class="small">• 时间安排</text>
+
+  <rect x="370" y="270" width="300" height="200" class="box"/>
+  <text x="520" y="295" text-anchor="middle" class="subtitle">价值塑造</text>
+  <text x="520" y="315" text-anchor="middle" class="small">• 专家资质</text>
+  <text x="520" y="330" text-anchor="middle" class="small">• 技术优势</text>
+  <text x="520" y="345" text-anchor="middle" class="small">• 设备先进</text>
+  <text x="520" y="360" text-anchor="middle" class="small">• 服务保障</text>
+  <text x="520" y="380" text-anchor="middle" class="subtitle">方案定制</text>
+  <text x="520" y="400" text-anchor="middle" class="small">• 个性化设计</text>
+  <text x="520" y="415" text-anchor="middle" class="small">• 效果预览</text>
+  <text x="520" y="430" text-anchor="middle" class="small">• 风险评估</text>
+  <text x="520" y="445" text-anchor="middle" class="small">• 完整方案</text>
+
+  <rect x="690" y="270" width="160" height="200" class="box"/>
+  <text x="770" y="295" text-anchor="middle" class="subtitle">成交推进</text>
+  <text x="770" y="315" text-anchor="middle" class="small">• 消除顾虑</text>
+  <text x="770" y="330" text-anchor="middle" class="small">• 强化价值</text>
+  <text x="770" y="345" text-anchor="middle" class="small">• 促成决策</text>
+  <text x="770" y="360" text-anchor="middle" class="small">• 签约付款</text>
+  <text x="770" y="380" text-anchor="middle" class="subtitle">后续服务</text>
+  <text x="770" y="400" text-anchor="middle" class="small">• 跟踪服务</text>
+  <text x="770" y="415" text-anchor="middle" class="small">• 效果反馈</text>
+  <text x="770" y="430" text-anchor="middle" class="small">• 长期维护</text>
+  <text x="770" y="445" text-anchor="middle" class="small">• 转介绍</text>
+
+  <!-- High-Value Client Profile -->
+  <text x="450" y="520" text-anchor="middle" class="subtitle">高价值客户画像</text>
+
+  <rect x="100" y="540" width="250" height="40" class="box"/>
+  <text x="225" y="565" text-anchor="middle" class="small">经济实力强 | 决策权大 | 追求品质 | 注重体验</text>
+
+  <rect x="550" y="540" width="250" height="40" class="box"/>
+  <text x="675" y="565" text-anchor="middle" class="small">理性分析 | 信任专业 | 要求保障 | 认可价值</text>
+</svg>
