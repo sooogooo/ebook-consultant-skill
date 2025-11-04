@@ -1,0 +1,126 @@
+site_name: 医美超级成交：医美咨询师实战技巧
+site_description: 医美咨询师培训教材
+site_author: sooogooo
+site_url: https://sooogooo.github.io/ebook-consultant-skill
+
+# Repository
+repo_name: sooogooo/ebook-consultant-skill
+repo_url: https://github.com/sooogooo/ebook-consultant-skill
+
+# Copyright
+copyright: Copyright &copy; 2025 sooogooo
+
+# Configuration
+theme:
+  name: material
+  language: zh
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+
+  # Font
+  font:
+    text: Microsoft YaHei
+    code: Roboto Mono
+
+  # Features
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+
+# Plugins
+plugins:
+  - search
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sooogooo
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - 首页: index.md
+  - 全书目录: 00-content.md
+  - 第一部分：基础认知篇:
+      - 第1章 医美咨询师的角色定位与价值: 01-role-and-position.md
+      - 第2章 医美行业生态与客户心理分析: 02-industry-ecosystem.md
+      - 第3章 专业形象塑造与沟通基础: 03-professional-image.md
+  - 第二部分：核心技能篇:
+      - 第4章 客户需求挖掘的七大技巧: 04-demand-discovery.md
+      - 第5章 专业咨询话术与异议处理: 05-consultation-script.md
+      - 第6章 价值呈现与方案设计: 06-value-proposition.md
+      - 第7章 成交临门一脚的关键动作: 07-closing-techniques.md
+  - 第三部分：高阶策略篇:
+      - 第8章 不同类型客户的差异化成交策略: 08-customer-segmentation.md
+      - 第9章 高客单价项目的成交心法: 09-high-value-sales.md
+      - 第10章 客户转介绍与复购的运营技巧: 10-referral-retention.md
+  - 第四部分：实战工具篇:
+      - 第11章 咨询流程标准化与话术模板: 11-process-standardization.md
+      - 第12章 成交数据分析与业绩提升: 12-data-analysis.md
+      - 第13章 常见问题FAQ与应对策略: 13-faq-strategies.md
+  - 第五部分：进阶成长篇:
+      - 第14章 从咨询师到销冠的成长路径: 14-career-growth.md
+      - 第15章 团队管理与培训技巧: 15-team-management.md
+      - 第16章 个人品牌建设与职业规划: 16-personal-branding.md
+
+# Watch
+watch:
+  - .
