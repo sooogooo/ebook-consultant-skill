@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="医美咨询师实战技巧 - 专业的医美知识平台">
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <title>医美咨询师实战技巧</title>
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <img src="https://docs.bccsw.cn/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
+                <h1 class="header-title">医美咨询师实战技巧</h1>
+            </div>
+            <nav class="header-nav">
+                <button class="nav-btn" data-action="usage">
+                    <span class="material-symbols-outlined">help</span>
+                    <span>使用说明</span>
+                </button>
+                <button class="nav-btn" data-action="about">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>关于</span>
+                </button>
+                <button class="nav-btn settings-btn" data-action="settings">
+                    <span class="material-symbols-outlined">settings</span>
+                    <span>设置</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2 class="hero-title">专业医美知识平台</h2>
+                <p class="hero-subtitle">掌握医美咨询核心技能，成为行业顶尖专家</p>
+            </section>
+
+            <!-- AI Chat Section -->
+            <section class="ai-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <span class="material-symbols-outlined">smart_toy</span>
+                        AI智能助手
+                    </h3>
+                    <button class="refresh-btn" id="refreshSuggestions">
+                        <span class="material-symbols-outlined">refresh</span>
+                        刷新建议
+                    </button>
+                </div>
+
+                <div class="ai-container">
+                    <div class="suggestions" id="aiSuggestions">
+                        <div class="suggestion-item" data-prompt="如何成为一名优秀的医美咨询师？">
+                            <span class="material-symbols-outlined">help</span>
+                            <span>如何成为一名优秀的医美咨询师？</span>
+                        </div>
+                        <div class="suggestion-item" data-prompt="客户犹豫不决时，该如何处理？">
+                            <span class="material-symbols-outlined">question_answer</span>
+                            <span>客户犹豫不决时，该如何处理？</span>
+                        </div>
+                        <div class="suggestion-item" data-prompt="医美行业有哪些发展趋势？">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            <span>医美行业有哪些发展趋势？</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-container" id="chatContainer">
+                        <div class="chat-messages" id="chatMessages"></div>
+                        <div class="chat-input-container">
+                            <textarea
+                                id="chatInput"
+                                placeholder="输入您的问题..."
+                                rows="2"
+                                class="chat-input"
+                            ></textarea>
+                            <button id="sendMessage" class="send-btn">
+                                <span class="material-symbols-outlined">send</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="chat-history" id="chatHistory">
+                        <h4>对话历史</h4>
+                        <div class="history-list" id="historyList"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Book Content -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <span class="material-symbols-outlined">menu_book</span>
+                        课程内容
+                    </h3>
+                </div>
+
+                <div class="content-categories" id="contentCategories">
+                    <div class="category-group" data-category="基础认知">
+                        <div class="category-header">
+                            <h4>第一部分：基础认知篇 <span class="material-symbols-outlined">expand_more</span></h4>
+                            <span class="chapter-count">3章</span>
+                        </div>
+                        <div class="category-content">
+                            <a href="docs/01-role-and-position.html" class="chapter-link">
+                                <span class="material-symbols-outlined">person</span>
+                                <span>第1章：医美咨询师的角色定位与价值</span>
+                            </a>
+                            <a href="docs/02-industry-ecosystem.html" class="chapter-link">
+                                <span class="material-symbols-outlined">business</span>
+                                <span>第2章：医美行业生态与客户心理分析</span>
+                            </a>
+                            <a href="docs/03-professional-image.html" class="chapter-link">
+                                <span class="material-symbols-outlined">face</span>
+                                <span>第3章：专业形象塑造与沟通基础</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="category-group" data-category="核心技能">
+                        <div class="category-header">
+                            <h4>第二部分：核心技能篇 <span class="material-symbols-outlined">expand_more</span></h4>
+                            <span class="chapter-count">4章</span>
+                        </div>
+                        <div class="category-content">
+                            <a href="docs/04-demand-discovery.html" class="chapter-link">
+                                <span class="material-symbols-outlined">search</span>
+                                <span>第4章：客户需求挖掘的七大技巧</span>
+                            </a>
+                            <a href="docs/05-consultation-script.html" class="chapter-link">
+                                <span class="material-symbols-outlined">chat</span>
+                                <span>第5章：专业咨询话术与异议处理</span>
+                            </a>
+                            <a href="docs/06-value-proposition.html" class="chapter-link">
+                                <span class="material-symbols-outlined">stars</span>
+                                <span>第6章：价值呈现与方案设计</span>
+                            </a>
+                            <a href="docs/07-closing-techniques.html" class="chapter-link">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                <span>第7章：成交临门一脚的关键动作</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="category-group" data-category="高阶策略">
+                        <div class="category-header">
+                            <h4>第三部分：高阶策略篇 <span class="material-symbols-outlined">expand_more</span></h4>
+                            <span class="chapter-count">3章</span>
+                        </div>
+                        <div class="category-content">
+                            <a href="docs/08-customer-segmentation.html" class="chapter-link">
+                                <span class="material-symbols-outlined">group</span>
+                                <span>第8章：不同类型客户的差异化成交策略</span>
+                            </a>
+                            <a href="docs/09-high-value-sales.html" class="chapter-link">
+                                <span class="material-symbols-outlined">diamond</span>
+                                <span>第9章：高客单价项目的成交心法</span>
+                            </a>
+                            <a href="docs/10-referral-retention.html" class="chapter-link">
+                                <span class="material-symbols-outlined">repeat</span>
+                                <span>第10章：客户转介绍与复购的运营技巧</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="category-group" data-category="实战工具">
+                        <div class="category-header">
+                            <h4>第四部分：实战工具篇 <span class="material-symbols-outlined">expand_more</span></h4>
+                            <span class="chapter-count">3章</span>
+                        </div>
+                        <div class="category-content">
+                            <a href="docs/11-process-standardization.html" class="chapter-link">
+                                <span class="material-symbols-outlined">rule</span>
+                                <span>第11章：咨询流程标准化与话术模板</span>
+                            </a>
+                            <a href="docs/12-data-analysis.html" class="chapter-link">
+                                <span class="material-symbols-outlined">analytics</span>
+                                <span>第12章：成交数据分析与业绩提升</span>
+                            </a>
+                            <a href="docs/13-faq-strategies.html" class="chapter-link">
+                                <span class="material-symbols-outlined">help_center</span>
+                                <span>第13章：常见问题FAQ与应对策略</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="category-group" data-category="进阶成长">
+                        <div class="category-header">
+                            <h4>第五部分：进阶成长篇 <span class="material-symbols-outlined">expand_more</span></h4>
+                            <span class="chapter-count">3章</span>
+                        </div>
+                        <div class="category-content">
+                            <a href="docs/14-career-growth.html" class="chapter-link">
+                                <span class="material-symbols-outlined">trending_up</span>
+                                <span>第14章：从咨询师到销冠的成长路径</span>
+                            </a>
+                            <a href="docs/15-team-management.html" class="chapter-link">
+                                <span class="material-symbols-outlined">groups</span>
+                                <span>第15章：团队管理与培训技巧</span>
+                            </a>
+                            <a href="docs/16-personal-branding.html" class="chapter-link">
+                                <span class="material-symbols-outlined">badge</span>
+                                <span>第16章：个人品牌建设与职业规划</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Tool Section -->
+            <section class="design-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <span class="material-symbols-outlined">palette</span>
+                        设计工具
+                    </h3>
+                    <div class="export-buttons">
+                        <button class="export-btn" id="exportPNG">
+                            <span class="material-symbols-outlined">image</span>
+                            导出PNG
+                        </button>
+                        <button class="export-btn" id="exportPDF">
+                            <span class="material-symbols-outlined">picture_as_pdf</span>
+                            导出PDF
+                        </button>
+                    </div>
+                </div>
+                <div class="design-canvas">
+                    <canvas id="designCanvas" width="800" height="600"></canvas>
+                    <div class="design-controls">
+                        <button class="control-btn" id="addText">添加文字</button>
+                        <button class="control-btn" id="addShape">添加图形</button>
+                        <button class="control-btn" id="clearCanvas">清空画布</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <h3 class="section-title">
+                    <span class="material-symbols-outlined">contact_support</span>
+                    联系我们
+                </h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <p>重庆市渝中区临江支路28号</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="material-symbols-outlined">email</span>
+                        <p>yuxiaodong@beaucare.org</p>
+                    </div>
+                    <div class="contact-card">
+                        <span class="material-symbols-outlined">phone</span>
+                        <p>023-63326559</p>
+                    </div>
+                    <a href="https://work.weixin.qq.com/kfid/kfc193e1c58e9c203c2" target="_blank" class="contact-card qr-card">
+                        <img src="https://docs.bccsw.cn/images/dr-he/dr-he-brcode.png" alt="微信二维码">
+                        <p>扫码咨询</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">
+                    <span class="material-symbols-outlined">description</span>
+                    <span>使用说明</span>
+                </a>
+                <a href="#" class="footer-link">
+                    <span class="material-symbols-outlined">info</span>
+                    <span>关于我们</span>
+                </a>
+                <a href="#" class="footer-link">
+                    <span class="material-symbols-outlined">privacy_tip</span>
+                    <span>隐私政策</span>
+                </a>
+                <a href="#" class="footer-link">
+                    <span class="material-symbols-outlined">article</span>
+                    <span>服务条款</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>设置</h3>
+                <button class="close-btn" id="closeSettings">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label class="setting-label">
+                        <span>主题配色</span>
+                        <select id="themeSelect" class="setting-select">
+                            <option value="default">优雅米白</option>
+                            <option value="mint">薄荷清新</option>
+                            <option value="lavender">淡紫梦幻</option>
+                            <option value="rose">玫瑰金</option>
+                            <option value="ocean">海洋蓝</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="setting-group">
+                    <label class="setting-label">
+                        <span>字体大小</span>
+                        <select id="fontSizeSelect" class="setting-select">
+                            <option value="small">小</option>
+                            <option value="medium" selected>中</option>
+                            <option value="large">大</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="setting-group">
+                    <label class="setting-label">
+                        <span>AI输出风格</span>
+                        <select id="aiStyleSelect" class="setting-select">
+                            <option value="casual">轻松幽默</option>
+                            <option value="standard" selected>标准日常</option>
+                            <option value="professional">科学严谨</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="setting-group">
+                    <label class="setting-label">
+                        <span>AI输出长度</span>
+                        <select id="aiLengthSelect" class="setting-select">
+                            <option value="detailed">详细</option>
+                            <option value="standard">标准</option>
+                            <option value="concise" selected>简约</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Info -->
+    <div class="footer-info">
+        <div class="footer-container">
+            <div class="company-info">
+                <p>重庆联合丽格科技有限公司</p>
+                <p>地址：重庆市渝中区临江支路28号</p>
+                <p>电子邮件：yuxiaodong@beaucare.org | 联系电话：023-63326559</p>
+                <p>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" class="icp-link">
+                        渝 ICP 备 2024023473 号
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/ai.js"></script>
+    <script src="js/design.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
