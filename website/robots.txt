@@ -1,0 +1,11 @@
+# Robot规则 for 医美咨询师实战技巧网站
+User-agent: *
+Allow: /
+
+# Sitemap位置
+Sitemap: https://sooogooo.github.io/ebook-consultant-skill/website/sitemap.xml
+
+# 禁止抓取私有页面
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
