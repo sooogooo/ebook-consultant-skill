@@ -385,3 +385,109 @@ document.addEventListener('DOMContentLoaded', () => {
 // 导出全局函数
 window.scrollToTop = () => window.app?.scrollToTop();
 window.copyToClipboard = (text) => window.app?.copyToClipboard(text);
+
+// ========== 章节页面功能 ==========
+
+// 阅读进度条
+function initProgressBar() {
+    const progressBar = document.getElementById('progressBar');
+    if (!progressBar) return;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = progress + '%';
+    });
+}
+
+// 目录生成与滚动跟踪
+function initTableOfContents() {
+    const tocList = document.getElementById('tocList');
+    const tocSidebar = document.getElementById('tocSidebar');
+    const chapterContent = document.getElementById('chapterContent');
+
+    if (!tocList || !tocSidebar || !chapterContent) return;
+
+    // 生成目录
+    const headings = chapterContent.querySelectorAll('h2, h3');
+    if (headings.length === 0) {
+        tocSidebar.style.display = 'none';
+        return;
+    }
+
+    headings.forEach((heading, index) => {
+        if (!heading.id) {
+            heading.id = 'heading-' + index;
+        }
+
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + heading.id;
+        a.textContent = heading.textContent.substring(0, 30) + (heading.textContent.length > 30 ? '...' : '');
+        a.dataset.target = heading.id;
+
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    // 滚动跟踪
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                tocList.querySelectorAll('a').forEach(a => {
+                    a.classList.remove('active');
+                    if (a.dataset.target === id) {
+                        a.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, {
+        rootMargin: '-100px 0px -66% 0px'
+    });
+
+    headings.forEach(heading => observer.observe(heading));
+}
+
+// 字体大小调整
+let currentFontSize = 16;
+
+function adjustFontSize(delta) {
+    const chapterContent = document.getElementById('chapterContent');
+    if (!chapterContent) return;
+
+    currentFontSize = Math.max(12, Math.min(24, currentFontSize + delta));
+    chapterContent.style.fontSize = currentFontSize + 'px';
+    localStorage.setItem('chapterFontSize', currentFontSize);
+}
+
+function resetFontSize() {
+    const chapterContent = document.getElementById('chapterContent');
+    if (!chapterContent) return;
+
+    currentFontSize = 16;
+    chapterContent.style.fontSize = currentFontSize + 'px';
+    localStorage.removeItem('chapterFontSize');
+}
+
+// 初始化章节页面
+document.addEventListener('DOMContentLoaded', () => {
+    initProgressBar();
+    initTableOfContents();
+
+    // 加载保存的字体大小
+    const savedFontSize = localStorage.getItem('chapterFontSize');
+    if (savedFontSize) {
+        currentFontSize = parseInt(savedFontSize);
+        const chapterContent = document.getElementById('chapterContent');
+        if (chapterContent) {
+            chapterContent.style.fontSize = currentFontSize + 'px';
+        }
+    }
+
+    // 导出字体调整函数到全局
+    window.adjustFontSize = adjustFontSize;
+    window.resetFontSize = resetFontSize;
+});
