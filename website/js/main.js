@@ -491,3 +491,102 @@ document.addEventListener('DOMContentLoaded', () => {
     window.adjustFontSize = adjustFontSize;
     window.resetFontSize = resetFontSize;
 });
+
+// ========== 搜索功能 ==========
+
+// 初始化搜索功能
+function initSearch() {
+    const searchInput = document.getElementById('headerSearch');
+    const searchResults = document.getElementById('searchResults');
+
+    if (!searchInput || !searchResults) return;
+
+    // 加载搜索索引
+    let searchIndex = [];
+    if (window.searchIndex) {
+        searchIndex = window.searchIndex;
+    }
+
+    // 输入防抖
+    let debounceTimer;
+    searchInput.addEventListener('input', (e) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            const query = e.target.value.trim();
+            if (query.length >= 2) {
+                performSearch(query, searchIndex, searchResults);
+            } else {
+                searchResults.classList.remove('active');
+                searchResults.innerHTML = '';
+            }
+        }, 300);
+    });
+
+    // 聚焦时显示结果
+    searchInput.addEventListener('focus', () => {
+        if (searchInput.value.trim().length >= 2) {
+            searchResults.classList.add('active');
+        }
+    });
+
+    // 点击外部关闭结果
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.remove('active');
+        }
+    });
+
+    // 键盘导航
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            searchResults.classList.remove('active');
+            searchInput.blur();
+        } else if (e.key === 'Enter') {
+            const firstResult = searchResults.querySelector('.search-result-item');
+            if (firstResult) {
+                window.location.href = firstResult.dataset.url;
+            }
+        }
+    });
+}
+
+// 执行搜索
+function performSearch(query, searchIndex, searchResults) {
+    const results = window.searchChapters(query);
+
+    if (results.length === 0) {
+        searchResults.innerHTML = `
+            <div class="search-no-result">
+                <span class="material-symbols-outlined">search_off</span>
+                <p>未找到相关章节</p>
+            </div>
+        `;
+    } else {
+        searchResults.innerHTML = results.slice(0, 6).map(result => `
+            <div class="search-result-item" data-url="${result.url}">
+                <div class="search-result-title">${result.title}</div>
+                <div class="search-result-desc">${result.description}</div>
+                <div class="search-result-keywords">
+                    ${result.matchedKeywords.map(k => `<span class="search-keyword">${k}</span>`).join('')}
+                </div>
+            </div>
+        `).join('');
+
+        // 绑定点击事件
+        searchResults.querySelectorAll('.search-result-item').forEach(item => {
+            item.addEventListener('click', () => {
+                window.location.href = item.dataset.url;
+            });
+        });
+    }
+
+    searchResults.classList.add('active');
+}
+
+// 页面加载时初始化搜索
+document.addEventListener('DOMContentLoaded', () => {
+    // ... existing code ...
+
+    // 初始化搜索
+    initSearch();
+});
