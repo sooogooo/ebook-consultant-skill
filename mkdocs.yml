@@ -51,13 +51,33 @@ theme:
 
 # Plugins
 plugins:
-  - search
+  - search:
+      separator: '[\s\-\.]+'
+  - sitemap:
+      hostname: https://sooogooo.github.io/ebook-consultant-skill/
+  - minify:
+      minify_html: true
 
 # Customization
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sooogooo
+    - icon: fontawesome/brands/weixin
+      link: wechat:sooogooo
+
+  # Reading time
+  reading_time:
+    enabled: true
+
+  # Comments (optional)
+  comment:
+    provider: giscus
+    giscus:
+      repo: sooogooo/ebook-consultant-skill
+      repo_id: R_kgDOG9
+      category: Announcements
+      category_id: DIC_kwDOG9
 
 # Extensions
 markdown_extensions:
