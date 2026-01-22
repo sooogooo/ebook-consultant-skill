@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="医美咨询师实战技巧">
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png">
+    <title>第7章：临门一脚这张皮</title>
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .chapter-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-2xl) var(--space-md);
+            background-color: var(--bg-primary);
+            min-height: calc(100vh - 200px);
+        }
+
+        .chapter-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+            padding-bottom: var(--space-xl);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .chapter-title {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+        }
+
+        .chapter-content {
+            background-color: var(--bg-secondary);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl);
+            box-shadow: 0 2px 12px var(--shadow-light);
+            line-height: 1.8;
+            font-size: var(--font-size-base);
+        }
+
+        .chapter-content h1 {
+            font-size: var(--font-size-2xl);
+            color: var(--primary-color);
+            margin: var(--space-xl) 0 var(--space-md);
+            padding-bottom: var(--space-sm);
+            border-bottom: 2px solid var(--primary-light);
+        }
+
+        .chapter-content h2 {
+            font-size: var(--font-size-xl);
+            color: var(--text-primary);
+            margin: var(--space-lg) 0 var(--space-md);
+        }
+
+        .chapter-content h3 {
+            font-size: var(--font-size-lg);
+            color: var(--text-primary);
+            margin: var(--space-md) 0 var(--space-sm);
+        }
+
+        .chapter-content p {
+            margin: var(--space-md) 0;
+            color: var(--text-primary);
+        }
+
+        .chapter-content ul,
+        .chapter-content ol {
+            margin: var(--space-md) 0;
+            padding-left: var(--space-xl);
+        }
+
+        .chapter-content li {
+            margin: var(--space-sm) 0;
+            color: var(--text-primary);
+        }
+
+        .chapter-content strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .chapter-content em {
+            color: var(--accent-color);
+            font-style: italic;
+        }
+
+        .chapter-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .chapter-nav-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-md) var(--space-lg);
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-fast);
+            font-size: var(--font-size-base);
+        }
+
+        .chapter-nav-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .chapter-nav-btn.disabled {
+            background-color: var(--bg-tertiary);
+            color: var(--text-disabled);
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .back-home {
+            position: fixed;
+            top: 80px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm) var(--space-md);
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            font-size: var(--font-size-sm);
+        }
+
+        .back-home:hover {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        .ai-floating-btn {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: all var(--transition-fast);
+        }
+
+        .ai-floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .ai-floating-btn .material-symbols-outlined {
+            color: white;
+            font-size: 28px;
+        }
+
+        @media (max-width: 768px) {
+            .chapter-container {
+                padding: var(--space-lg) var(--space-sm);
+            }
+
+            .chapter-content {
+                padding: var(--space-lg);
+            }
+
+            .chapter-nav {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+
+            .chapter-nav-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-home">
+        <span class="material-symbols-outlined">arrow_back</span>
+        <span>返回首页</span>
+    </a>
+
+    <div class="chapter-container">
+        <header class="chapter-header">
+            <h1 class="chapter-title">第7章：临门一脚怎么踢？</h1>
+            <div class="chapter-meta">
+                <span><span class="material-symbols-outlined">menu_book</span>第二部分：核心技能篇</span>
+                <span><span class="material-symbols-outlined">schedule</span>2025年11月</span>
+                <span><span class="material-symbols-outlined">visibility</span>约1.6万字</span>
+            </div>
+        </header>
+
+        <article class="chapter-content">
+            <h1>临门一脚，怎么踢？</h1>
+
+            <p>咨询聊了两个小时，客户也说挺好，也说满意，就是不签字。</p>
+
+            <p>你急不急？</p>
+
+            <p>急也没用。</p>
+
+            <p>成交这玩意儿，就像踢足球。前面传了99次球，最后一脚踢不进，照样输。</p>
+
+            <p>很多咨询师前面做得挺好，就是临门一脚软。</p>
+
+            <p>软在哪儿？</p>
+
+            <p>不敢催、不敢逼、不敢让客户做决定。</p>
+
+            <p>怕什么？</p>
+
+            <p>怕客户跑了。</p>
+
+            <p>这叫多虑。</p>
+
+            <p>客户既然跟你聊了两个小时，说明什么？说明她有兴趣。</p>
+
+            <p>有兴趣，就有戏。</p>
+
+            <p>关键是你得会踢这临门一脚。</p>
+
+            <h2>成交的底儿是什么？</h2>
+
+            <p>三个要素：</p>
+
+            <p><strong>第一要素：信任</strong><br>
+            客户信你、信你的机构、信你能做好。</p>
+
+            <p><strong>第二要素：匹配</strong><br>
+            方案符合她的需求，价格符合她的预算。</p>
+
+            <p><strong>第三要素：推动</strong><br>
+            你得推她一把，让她下决心。</p>
+
+            <p>三样缺一不可。</p>
+
+            <p>少了信任，她不信你。<br>
+            少了匹配，她不满意。<br>
+            少了推动，她不下决心。</p>
+
+            <h2>什么时候踢？</h2>
+
+            <p>不是什么时候都能踢。</p>
+
+            <p>得等信号。</p>
+
+            <p>客户什么时候会给你信号？</p>
+
+            <p><strong>语言信号</strong><br>
+            "这个大概多少钱？"<br>
+            "什么时候可以做？"<br>
+            "需要做什么准备？"</p>
+
+            <p><strong>行为信号</strong><br>
+            仔细查看合同。<br>
+            问具体流程。<br>
+            认真看案例照片。</p>
+
+            <p><strong>表情信号</strong><br>
+            眼神专注。<br>
+            点头认同。<br>
+            面露期待。</p>
+
+            <p>这些信号出现了，就可以踢了。</p>
+
+            <p>没出现？继续聊，继续观察。</p>
+
+            <h2>十二种踢法</h2>
+
+            <p><strong>踢法一：假设踢</strong><br>
+            别问她要不要做，直接问什么时候做。</p>
+
+            <p>"您是今天方便还是改天？"<br>
+            "您是刷卡还是现金？"</p>
+
+            <p>假设她已经同意了。</p>
+
+            <p><strong>踢法二：二选一踢</strong><br>
+            别问做不做，问选哪个。</p>
+
+            <p>"您是选方案一还是方案二？"<br>
+            "您是上午来还是下午来？"</p>
+
+            <p>给她两个选项，让她挑，而不是拒绝。</p>
+
+            <p><strong>踢法三：紧迫踢</strong><br>
+            制造时间压力。</p>
+
+            <p>"今天的优惠活动今天截止"<br>
+            "医生档期比较紧张，建议今天确定"</p>
+
+            <p>限时限量，人就容易冲动。</p>
+
+            <p><strong>踢法四：优惠踢</strong><br>
+            用实惠打动她。</p>
+
+            <p>"今天可以享受8折优惠"<br>
+            "现在签约赠送术后护理"</p>
+
+            <p>占便宜的心理，人皆有之。</p>
+
+            <p><strong>踢法五：保证踢</strong><br>
+            消除她的顾虑。</p>
+
+            <p>"我们保证效果满意"<br>
+            "不满意可以免费重做"</p>
+
+            <p>承诺越多，信任越高。</p>
+
+            <p><strong>踢法六：从众踢</strong><br>
+            大家都做的，肯定没错。</p>
+
+            <p>"很多客户都选择了这个方案"<br>
+            "90%的客户都会选择这个"</p>
+
+            <p>从众心理，安全第一。</p>
+
+            <p><strong>踢法七：体验踢</strong><br>
+            先试试再说。</p>
+
+            <p>"您可以先体验一次，感受效果"<br>
+            "体验满意再决定是否继续"</p>
+
+            <p>降低门槛，容易接受。</p>
+
+            <p><strong>踢法八：总结踢</strong><br>
+            把好处再说一遍。</p>
+
+            <p>"综合来看，这个方案最适合您"<br>
+            "您觉得还有哪些疑问吗？"</p>
+
+            <p>强化印象，促进决策。</p>
+
+            <p><strong>踢法九：对比踢</strong><br>
+            比出优势。</p>
+
+            <p>"相比其他方案，这个性价比最高"<br>
+            "早做比晚做好"</p>
+
+            <p>比较出价值。</p>
+
+            <p><strong>踢法十：故事踢</strong><br>
+            用案例打动她。</p>
+
+            <p>"我之前的客户和您情况类似，现在效果特别好"<br>
+            "有位客户也是犹豫不决，后来很后悔没早做"</p>
+
+            <p>别人的成功，是最好的证明。</p>
+
+            <p><strong>踢法十一：情感踢</strong><br>
+            打感情牌。</p>
+
+            <p>"您变美了，您的家人也会很开心"<br>
+            "投资自己是最值得的"</p>
+
+            <p>情感共鸣，触动内心。</p>
+
+            <p><strong>踢法十二：直接踢</strong><br>
+            开门见山。</p>
+
+            <p>"如果您觉得可以，我们今天就定下来"<br>
+            "各方面都没问题的话，我们签合同吧"</p>
+
+            <p>简单粗暴，有时候最有效。</p>
+
+            <h2>什么时候不踢？</h2>
+
+            <p>不是什么时候都能踢。</p>
+
+            <p>四种情况，别踢。</p>
+
+            <p><strong>情况一：需求还没明确</strong><br>
+            客户自己都不知道要什么，你让她做什么决定？</p>
+
+            <p><strong>情况二：异议还没处理</strong><br>
+            客户还有顾虑，你逼她也没用。</p>
+
+            <p><strong>情况三：方案还没讲清楚</strong><br>
+            她都没搞明白你要做什么，凭什么签字？</p>
+
+            <p><strong>情况四：预算还不够</strong><br>
+            她就是想要，没钱也是白搭。</p>
+
+            <p>这四种情况，先解决，再踢。</p>
+
+            <h2>踢的时候要注意什么？</h2>
+
+            <p>三样东西：</p>
+
+            <p><strong>态度</strong><br>
+            自信而不傲慢。<br>
+            积极而不急躁。<br>
+            真诚而不做作。<br>
+            专业而不冷漠。</p>
+
+            <p><strong>时机</strong><br>
+            别急，等信号。<br>
+            别慢，错过时机。<br>
+            别拖，夜长梦多。</p>
+
+            <p><strong>力度</strong><br>
+            该推的时候推。<br>
+            该拉的时候拉。<br>
+            软硬兼施，灵活运用。</p>
+
+            <p>四种误区千万别犯：</p>
+
+            <p><strong>误区一：过早踢</strong><br>
+            客户还没准备好，你硬踢，她反感。</p>
+
+            <p><strong>误区二：错过时机</strong><br>
+            客户都给你信号了，你还在那儿磨蹭。</p>
+
+            <p><strong>误区三：过度推销</strong><br>
+            太明显的推销意图，客户有压力。</p>
+
+            <p><strong>误区四：承诺过度</strong><br>
+            什么都敢答应，后续怎么办？</p>
+
+            <h2>踢完以后呢？</h2>
+
+            <p>不是踢完就完事了。</p>
+
+            <p>成交只是开始，服务还在后头。</p>
+
+            <p>成交后要做什么？</p>
+
+            <p><strong>第一步：恭喜</strong><br>
+            "恭喜您做了明智的选择"</p>
+
+            <p><strong>第二步：确认</strong><br>
+            "我再跟您确认一下方案细节"</p>
+
+            <p><strong>第三步：安排</strong><br>
+            "我们安排一下具体时间"</p>
+
+            <p><strong>第四步：指导</strong><br>
+            "告诉您术前需要准备什么"</p>
+
+            <p>每一步都要专业，都要贴心。</p>
+
+            <p>让客户觉得，选你选对了。</p>
+
+            <h2>小结</h2>
+
+            <p>临门一脚，是整个咨询的临门一脚，也是技术活。</p>
+
+            <p>十二种踢法，每种都有它的适用场景。</p>
+
+            <p>选择法成交最常用，适合大部分客户。二选一，客户不会那么纠结。</p>
+
+            <p>假设法成交要大胆，你假设她已经同意，她自己都不好意思反对。</p>
+
+            <p>紧迫法成交别乱用，真有优惠才说，别忽悠。客户又不傻。</p>
+
+            <p>价值法成交最靠谱，你把价值讲透了，客户自己会算账。</p>
+
+            <p>对比法成交要有技巧，和谁对比很重要，和差的比没意义，和好的比显优势。</p>
+
+            <p>四种情况别踢：客户还在犹豫、家人有异议、价格明显超出、方案还没讲透。强行踢，踢跑客户。</p>
+
+            <p>四种误区别犯：别催别逼、别装逼、别降价、别放弃。催逼会让客户反感，装逼会让客户不信任，降价会让客户质疑价值，放弃会错失机会。</p>
+
+            <p>最佳成交时机：客户问价格、问流程、问恢复、问保障、问医生。这些都是成交信号。</p>
+
+            <p>最实用的话术："综合来看，这个方案最适合您"、"今天定的话可以享受优惠"、"我们什么时候安排比较合适"。</p>
+
+            <p>成交后要做四件事：恭喜、确认、安排、指导。每一步都要专业，让客户觉得选对了。</p>
+
+            <p>记住三个要点：</p>
+
+            <p>第一，客户不是被你说服的，是被她自己说服的。你的任务，是给她一个说服自己的理由。</p>
+
+            <p>第二，踢完不是完事，后续服务更重要。服务跟得上，客户满意，才会复购，才会有转介绍。</p>
+
+            <p>第三，成交是水到渠成，不是强行推动。前面的铺垫做足了，这一脚踢出去，自然就进了。</p>
+
+            <p>练好临门一脚，再复杂的球，也能踢进门的。</p>
+
+            <p>下章我们聊客户分类。不同客户，不同踢法。</p>
+        </article>
+
+        <nav class="chapter-nav">
+            <a href="ch06-value-proposition.html" class="chapter-nav-btn">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span>上一章</span>
+            </a>
+            <a href="../index.html" class="chapter-nav-btn" style="background-color: var(--secondary-color);">
+                <span class="material-symbols-outlined">home</span>
+                <span>目录</span>
+            </a>
+            <a href="ch08-customer-segmentation.html" class="chapter-nav-btn">
+                <span>下一章</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="ai-floating-btn" onclick="window.open('../index.html#ai-section', '_self')">
+        <span class="material-symbols-outlined">smart_toy</span>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
