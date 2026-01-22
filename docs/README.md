@@ -46,36 +46,84 @@
 - 医美培训师
 - 对医美行业感兴趣的人员
 
+## 技术架构
+
+### 文档系统
+- **MkDocs** + Material 主题
+- 支持多语言（中文）
+- 内置搜索功能
+- 支持响应式设计
+
+### 静态网站
+- 独立HTML/CSS/JS实现
+- PWA支持（Service Worker）
+- 客户端搜索功能
+- 主题切换支持
+
 ## 使用方法
 
-每个章节都包含：
-- 理论知识
-- 实战案例
-- 话术模板
-- 工具表格
-- 练习题
+### 本地预览（MkDocs）
 
-建议按章节顺序学习，并结合实际工作进行练习和应用。
+```bash
+# 安装依赖
+pip install mkdocs mkdocs-material
 
-## 贡献
+# 启动本地服务器
+mkdocs serve
 
-欢迎对本书内容提出宝贵意见和建议。如果您有任何问题或建议，请通过以下方式联系：
+# 构建静态网站
+mkdocs build
+```
 
-- 项目地址：[GitHub Repository]
-- 作者邮箱：sooogooo@gmail.com
+### 直接访问
 
-## 版权声明
+打开 `website/index.html` 即可访问静态版本网站。
 
-本书版权所有 © sooogooo 2025
+## 项目结构
 
-保留所有权利。未经版权所有者事先书面许可，不得以任何形式复制、传播或使用本书内容。
+```
+superdeal/
+├── docs/                    # 文档源文件（Markdown）
+│   ├── 00-content.md       # 全书目录
+│   ├── 01-16-*.md          # 各章节内容
+│   └── chapters/           # SVG图表
+├── website/                # 静态网站
+│   ├── index.html         # 首页
+│   ├── chapter-template.html  # 章节模板
+│   ├── chapters/          # 章节HTML文件
+│   ├── css/               # 样式文件
+│   ├── js/                # JavaScript文件
+│   └── images/            # 图片资源
+├── mkdocs.yml             # MkDocs配置
+└── README.md              # 项目说明
+```
 
 ## 更新日志
+
+### v1.1 (2026-01)
+- 新增静态网站功能增强（阅读进度条、目录悬浮）
+- 新增搜索功能
+- 新增SEO优化（sitemap、robots.txt、meta标签）
+- 新增MkDocs插件（sitemap、minify）
+- 修复内容错误
 
 ### v1.0 (2025-11)
 - 完成全书16章内容编写
 - 完善作者简介和版权信息
 - 建立标准化章节格式
+
+## 贡献
+
+欢迎对本书内容提出宝贵意见和建议。如果您有任何问题或建议，请通过以下方式联系：
+
+- 项目地址：[GitHub Repository](https://github.com/sooogooo/ebook-consultant-skill)
+- 作者邮箱：sooogooo@gmail.com
+
+## 许可证
+
+本书版权所有 © sooogooo 2025-2026
+
+保留所有权利。未经版权所有者事先书面许可，不得以任何形式复制、传播或使用本书内容。
 
 ---
 
